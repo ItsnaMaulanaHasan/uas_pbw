@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato";
+  margin: 0;
+}
+
+.movie-container {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.baris{
+  background-color: #ffffff;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin-right: 18px;
+}
+
+.seat-header {
+  background-color: #444451;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat-header.selected {
+  background-color: green;
+}
+
+.seat-header.sold {
+  background-color: rgb(22, 18, 224);
+  cursor: pointer;
+}
+
+.seat {
+  background-color: #444451;
+  height: 26px;
+  width: 32px;
+  margin: 3px;
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: green;
+}
+
+.seat.sold {
+  background-color: rgb(22, 18, 224);
+  cursor: pointer;
+}
+
+.seat:nth-of-type(3) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.button-area {
+  display: flex;
+  flex-direction: row;
+  /* margin-right: 12px; */
+}
+
+.button-area > div {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 5px;  /* and that, will result in a 10px gap */
+}
+
+.booking-btn {
+  background-color: rgb(31, 182, 89);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+  vertical-align: middle;
+  text-align: center;
+  height: 30px;
+  padding-top: 3px;
+  width:80px;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.reset-btn {
+  background-color: rgb(228, 77, 89);
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+  vertical-align: middle;
+  text-align: center;
+  height: 30px;
+  padding-top: 3px;
+  width:80px;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.booking-btn:hover{
+  background-color: rgb(20, 104, 45);
+}
+.reset-btn:hover{
+  background-color: rgb(131, 23, 32);
+}
+
+.showcase .seat:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+p.text {
+  margin: 15px 0;
+}
+
+p.text span {
+  color: rgb(158, 248, 158);
+}
